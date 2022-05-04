@@ -93,7 +93,6 @@ const Theatres = () => {
         <Flex columnGap={2}>
           {featured.map((f, i) => (
             <Flex
-              h="100%"
               bgImage={`url(${f.img})`}
               backgroundPosition="center"
               bgSize="cover"

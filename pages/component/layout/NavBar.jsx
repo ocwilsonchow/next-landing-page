@@ -23,14 +23,14 @@ const navItems = [
 
 const NavBar = () => {
   return (
-    <Flex w="full" justifyContent="space-between" p={6} alignItems="center">
+    <Flex w="full" justifyContent="space-between" py={4} px={8} alignItems="center">
       <Link href="/">
         <Text
-          bgGradient="linear(to-r, blue.400, blue.600)"
+          bgGradient="linear(to-r, #456EB6, #E75258,#FAA12D)"
           bgClip="text"
           cursor="pointer"
           fontWeight="extrabold"
-          fontSize="2xl"
+          fontSize="3xl"
           _hover={{ color: "teal" }}
         >
           OKIE
@@ -44,14 +44,14 @@ const NavBar = () => {
                 size="sm"
                 variant="link"
                 color="black"
-                fontWeight="medium"
+                fontWeight="bold"
               >
                 {item.title}
               </Button>
             </Link>
           ))}
           <Button
-          size="sm"
+            size="sm"
             bgGradient="linear(to-r, blue.400, blue.600)"
             fontWeight="bold"
             color="white"
