@@ -32,13 +32,14 @@ const theatresList = [
 const Theatres = () => {
   return (
     <Flex columnGap={2} px={2} overflow="hidden">
-      {theatresList.map((theatre) => (
+      {theatresList.map((theatre, i) => (
         <Box
           borderRadius="md"
           borderWidth="0.5px"
           h="100px"
           w="80px"
           overflow="hidden"
+          key={i}
         >
           <Flex
             h="100%"

@@ -13,8 +13,8 @@ const SectionTwo = () => {
           </Text>
           <Text fontSize="xl" mb={4}>Our engineers and designers work closely together to craft your dream business solution.</Text>
          <Wrap>
-            {skills.map((skill) => (
-              <Button variant="outline">{skill}</Button>
+            {skills.map((skill, i) => (
+              <Button key={i} variant="outline">{skill}</Button>
             ))}
          </Wrap>
         </Box>
