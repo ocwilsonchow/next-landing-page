@@ -91,7 +91,7 @@ const Theatres = () => {
           Featured Classes
         </Text>
         <Flex columnGap={2}>
-          {featured.map((f) => (
+          {featured.map((f, i) => (
             <Flex
               h="100%"
               bgImage={`url(${f.img})`}
@@ -102,6 +102,7 @@ const Theatres = () => {
               h="100px"
               w="160px"
               borderRadius="lg"
+              key={i}
             >
               <Box
                 position="absolute"
