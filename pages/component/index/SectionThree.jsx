@@ -4,7 +4,7 @@ import { Box, Button, Flex, Image, Text, Wrap } from "@chakra-ui/react";
 
 const SectionThree = () => {
   return (
-    <Flex alignItems="center" p={10} justifyContent="flex-end" w="full" borderWidth="1px"  >
+    <Flex alignItems="center" p={10} justifyContent="flex-end" w="full" borderWidth="1px" borderRadius="xl" >
       <Box maxW="400px" >
         <Box>
           <Text fontWeight="bold" fontSize="5xl" lineHeight="1" mb={4}>

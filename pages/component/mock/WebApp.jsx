@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import calender from "../../../image/calendar.png";
+import MenuList from "./MenuList";
 import Theatres from "./Theatres";
 
 const WebApp = () => {
@@ -28,7 +29,7 @@ const WebApp = () => {
         <Circle bg="orange.400" boxSize="8px" />
         <Circle bg="green.400" boxSize="8px" />
       </HStack>
-      <Flex h="100%" >
+      <Flex h="100%">
         <Flex
           flexDir="column"
           rowGap={2}
@@ -36,8 +37,16 @@ const WebApp = () => {
           borderRightWidth="0.5px"
           p={2}
         >
-          <Text fontSize="8px" borderBottomWidth="0.5px" pb={2} mb={2}>
-            MetaUni
+          <Text
+            fontSize="8px"
+            borderBottomWidth="0.5px"
+            pb={2}
+            mb={2}
+            fontWeight="extrabold"
+            bgGradient="linear(to-r, blue.400, blue.600)"
+            bgClip="text"
+          >
+            MetaCollege
           </Text>
           <Text fontSize="7px" color="gray.500" fontWeight="light">
             Dashboard
@@ -94,61 +103,8 @@ const WebApp = () => {
               Theatres
             </Text>
           </HStack>
-          <Flex justifyContent="center" columnGap={2} p={2}>
-            <Text
-              px={1}
-              py={0.5}
-              borderRadius="md"
-              borderWidth="0.5px"
-              fontSize="8px"
-            >
-              🫁 Biology
-            </Text>
-            <Text
-              px={1}
-              py={0.5}
-              borderRadius="md"
-              borderWidth="0.5px"
-              fontSize="8px"
-            >
-              🌍 Physics
-            </Text>
-            <Text
-              px={1}
-              py={0.5}
-              borderRadius="md"
-              borderWidth="0.5px"
-              fontSize="8px"
-            >
-              🔥 Chemistry
-            </Text>
-            <Text
-              px={1}
-              py={0.5}
-              borderRadius="md"
-              borderWidth="0.5px"
-              fontSize="8px"
-            >
-              📗 Chinese
-            </Text>
-            <Text
-              px={1}
-              py={0.5}
-              borderRadius="md"
-              borderWidth="0.5px"
-              fontSize="8px"
-            >
-              📕 English
-            </Text>
-              <Text
-              px={1}
-              py={0.5}
-              borderRadius="md"
-              borderWidth="0.5px"
-              fontSize="8px"
-            >
-              📉 Mathematics
-            </Text>
+          <Flex  columnGap={2} p={2}>
+            <MenuList />
           </Flex>
           <Theatres />
         </Box>

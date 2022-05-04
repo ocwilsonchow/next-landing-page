@@ -34,6 +34,7 @@ const SectionOne = () => {
             color="white"
             _hover={{ bgGradient: "linear(to-r, blue.300, blue.500)" }}
             _focus={{ outline: 0 }}
+            _active={{ bgGradient: "linear(to-r, blue.600, blue.800)" }}
           >
             Bring Your Ideas to Live 💡
           </Button>

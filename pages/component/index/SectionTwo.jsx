@@ -5,7 +5,7 @@ const skills = ["Mobile Apps", "Web-based Platform", "E-commerce", "E-marketing"
 
 const SectionTwo = () => {
   return (
-    <Flex alignItems="center" p={10} borderWidth="1px" >
+    <Flex alignItems="center" p={10} borderWidth="1px" borderRadius="xl">
       <Box maxW="400px" >
         <Box>
           <Text fontWeight="bold" fontSize="5xl" lineHeight="1" mb={4}>
