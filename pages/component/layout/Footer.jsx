@@ -50,7 +50,7 @@ const Footer = () => {
       <Text fontSize="sm">Made by Wilson Chow</Text>
       <HStack spacing={3}>
         {links.map((link, i) => (
-          <a href={link.url}>
+          <a href={link.url} key={i}>
             <IconButton
               fontSize="md"
               variant="ghost"
