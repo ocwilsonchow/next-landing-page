@@ -22,7 +22,7 @@ const SectionFour = () => {
         fontWeight="extrabold"
         fontSize="5xl"
         lineHeight="1"
-        mb={4}
+
         textAlign="center"
         mb={10}
       >
