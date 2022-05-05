@@ -46,7 +46,7 @@ const links = [
 
 const Footer = () => {
   return (
-    <VStack justifyContent="center" borderTopWidth="0.5px" h="300px" mt={10} p={10}>
+    <VStack justifyContent="center" borderTopWidth="0.5px" h="200px" mt={10} p={10}>
       <Text fontSize="sm">Made by Wilson Chow</Text>
       <HStack spacing={3}>
         {links.map((link, i) => (
