@@ -12,7 +12,7 @@ const navItems = [
     link: "/about",
   },
   {
-    title: "Why Choose Us",
+    title: "Services",
     link: "/why",
   },
   {
@@ -23,10 +23,17 @@ const navItems = [
 
 const NavBar = () => {
   return (
-    <Flex w="full" justifyContent="space-between" py={4} px={8} alignItems="center">
+    <Flex
+      w="full"
+      justifyContent="space-between"
+      py={4}
+      px={8}
+      alignItems="center"
+    >
       <Link href="/">
         <Text
-          bgGradient="linear(to-r, #456EB6, #E75258,#FAA12D)"
+          // bgGradient="linear(to-r, #456EB6, #E75258,#FAA12D)"
+          bgGradient="linear(to-r, blue.400, blue.600)"
           bgClip="text"
           cursor="pointer"
           fontWeight="extrabold"
@@ -40,12 +47,7 @@ const NavBar = () => {
         <HStack spacing={6} display={{ base: "none", md: "flex" }}>
           {navItems.map((item, i) => (
             <Link key={i} href={item.link}>
-              <Button
-                size="sm"
-                variant="link"
-                color="black"
-                fontWeight="bold"
-              >
+              <Button size="sm" variant="link" color="black" fontWeight="bold">
                 {item.title}
               </Button>
             </Link>

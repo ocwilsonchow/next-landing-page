@@ -4,13 +4,13 @@ import WebApp from "../mock/WebApp";
 const SectionOne = () => {
   return (
     <Flex
-      minH="60vh"
+      flexDir={{sm: 'column', md: 'row'}}
       w="full"
       alignItems="center"
       justifyContent="space-between"
-      flexWrap="wrap"
+
       rowGap={10}
-      py="5vh"
+      py="10vh"
     >
       <Box maxW="500px">
         <Box>
@@ -24,7 +24,7 @@ const SectionOne = () => {
               Well-Fitted.
             </Text>
           </Box>
-          <Text mb={8} fontSize="xl">
+          <Text mb={8} fontSize="xl" fontWeight="semibold" color="gray.500">
             Unique tech-based solutions to unleash your business potential
           </Text>
           <Button
