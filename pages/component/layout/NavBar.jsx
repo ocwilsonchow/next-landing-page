@@ -5,19 +5,19 @@ import DrawerMenu from "./DrawerMenu";
 const navItems = [
   {
     title: "Projects",
-    link: "/projects",
+    link: "/",
   },
   {
     title: "About Us",
-    link: "/about",
+    link: "/",
   },
   {
     title: "Services",
-    link: "/why",
+    link: "/",
   },
   {
     title: "Our Clients",
-    link: "/clients",
+    link: "/",
   },
 ];
 
@@ -44,10 +44,19 @@ const NavBar = () => {
         </Text>
       </Link>
       <HStack spacing={6}>
-        <HStack spacing={6} display={{ base: "none", md: "flex" }}>
+        <HStack spacing={2} display={{ base: "none", md: "flex" }}>
           {navItems.map((item, i) => (
             <Link key={i} href={item.link}>
-              <Button size="sm" variant="link" color="black" fontWeight="bold">
+              <Button
+                size="sm"
+                variant="ghost"
+                borderRadius="full"
+                color="black"
+                fontWeight="bold"
+                _focus={{ outline: 0 }}
+                _hover={{bg: 'black', color: 'white'}}
+                transition="all ease 0.3s"
+              >
                 {item.title}
               </Button>
             </Link>

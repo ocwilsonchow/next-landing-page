@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/layout";
 import Head from "next/head";
+import SectionFive from "./component/index/SectionFive";
 import SectionFour from "./component/index/SectionFour";
 import SectionOne from "./component/index/SectionOne";
 import SectionThree from "./component/index/SectionThree";
@@ -12,6 +13,7 @@ export default function Home() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
     </Flex>
   );
 }

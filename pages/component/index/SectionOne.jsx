@@ -4,15 +4,15 @@ import WebApp from "../mock/WebApp";
 const SectionOne = () => {
   return (
     <Flex
-      flexDir={{sm: 'column', md: 'row'}}
+      flexDir={{ sm: "column", md: "row" }}
       w="full"
       alignItems="center"
       justifyContent="space-between"
-
       rowGap={10}
       py="10vh"
+      px={10}
     >
-      <Box maxW="500px">
+      <Box maxW="450px">
         <Box>
           <Box fontWeight="extrabold" fontSize="7xl" lineHeight="1" mb={4}>
             Nothing is Better Than

@@ -22,8 +22,7 @@ const SectionTwo = () => {
       justifyContent="space-between"
       alignItems="center"
       borderRadius="xl"
-      py={10}
-
+      p={10}
     >
       <Box maxW="500px">
         <Box>
@@ -77,7 +76,7 @@ const SectionTwo = () => {
               </HStack>
               <Box bg="white" w="40%" h={5} borderRadius="md" boxShadow="lg" />
               <Box bg="white" w="40%" h={5} borderRadius="md" boxShadow="lg" />
-             <Box bg="white" w="40%" h={10} borderRadius="md" boxShadow="lg" />
+              <Box bg="white" w="40%" h={10} borderRadius="md" boxShadow="lg" />
             </Flex>
           </Flex>
         </Box>
